@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>尾牙音樂</title>
+  <link rel="shortcut icon" href="#">
+  <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+  <section>
+    <h1>音效</h1>
+    <div class="music">
+      <button class="music-button" id="openingButton">開場音樂</button>
+      <button class="music-button" id="endingButton">送客音樂</button>
+      <button class="music-button" id="drumButton">鼓聲</button>
+      <button class="music-button" id="awardButton">頒獎音樂</button>
+      <button class="music-button" id="game1Button">抽獎配樂一</button>
+      <button class="music-button" id="game2Button">抽獎配樂二</button>
+    </div>
+    <h1>瘋狂黑白猜</h1>
+    <div>
+      <audio id="myAudio" controls loop>
+        <source src="./media/瘋狂黑白猜3.mp3" type="audio/mpeg">
+      </audio>
+    </div>
+    <div class="speed-block">
+      <label for="speedInput">Speed:</label>
+      <input type="range" id="speedInput" value="1" min="0.5" max="2" step="0.5">
+    </div>
+    <button id="resetButton">Reset</button>
+  </section>
+
+  <script src="./index.js"></script>
+</body>
+</html>
