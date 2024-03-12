@@ -9,26 +9,61 @@
 </head>
 <body>
   <section>
-    <h1>音效</h1>
+    <h1>尾牙音效</h1>
     <div class="music">
-      <button class="music-button" id="openingButton">開場音樂</button>
-      <button class="music-button" id="endingButton">送客音樂</button>
-      <button class="music-button" id="drumButton">鼓聲</button>
-      <button class="music-button" id="awardButton">頒獎音樂</button>
-      <button class="music-button" id="game1Button">抽獎配樂一</button>
-      <button class="music-button" id="game2Button">抽獎配樂二</button>
+      <div class="music-block">
+        <p>開場</p>
+        <div class="music-button" id="openingButton">
+          <img src="./assets/player.svg">
+        </div>
+      </div>
+      <div class="music-block">
+        <p>結尾</p>
+        <div class="music-button" id="endingButton">
+          <img src="./assets/player.svg">
+        </div>
+      </div>
+      <div class="music-block">
+        <p>鼓聲</p>
+        <div class="music-button" id="drumButton">
+          <img src="./assets/player.svg">
+        </div>
+      </div>
+      <div class="music-block">
+        <p>頒獎</p>
+        <div class="music-button" id="awardButton">
+          <img src="./assets/player.svg">
+        </div>
+      </div>
+      <div class="music-block">
+        <p>抽獎配樂一</p>
+        <div class="music-button" id="game1Button">
+          <img src="./assets/player.svg">
+        </div>
+      </div>
+      <div class="music-block">
+        <p>抽獎配樂二</p>
+        <div class="music-button" id="game2Button">
+          <img src="./assets/player.svg">
+        </div>
+      </div>
+      <div class="music-block">
+        <p>瘋狂黑白猜</p>
+        <div class="music-button" id="game3Button">
+          <img src="./assets/player.svg">
+        </div>
+      </div>
     </div>
-    <h1>瘋狂黑白猜</h1>
-    <div>
+    <div class="audio-block">
       <audio id="myAudio" controls loop>
-        <source src="./media/瘋狂黑白猜3.mp3" type="audio/mpeg">
+        <source src="" type="audio/mpeg">
       </audio>
     </div>
     <div class="speed-block">
-      <label for="speedInput">Speed:</label>
+      <label for="speedInput"><p>Speed</p></label>
       <input type="range" id="speedInput" value="1" min="0.5" max="2" step="0.5">
     </div>
-    <button id="resetButton">Reset</button>
+    <button id="resetButton">STOP & RESET</button>
   </section>
 
   <script src="./index.js"></script>
